@@ -73,7 +73,9 @@ function App() {
       console.error('Error response:', error.response?.data);
       
       let errorText = 'Hata oluştu. Tekrar deneyin.';
-      if (error.response?.data?.error) {
+      if (error.code === 'ERR_NETWORK' || error.message?.includes('Network Error') || error.message?.includes('CONNECTION_REFUSED')) {
+        errorText = 'Backend sunucusu çalışmıyor. Lütfen backend klasöründe "npm start" komutu ile backend sunucusunu başlatın.';
+      } else if (error.response?.data?.error) {
         errorText = error.response.data.error;
       } else if (error.response?.data?.details) {
         errorText = `Hata: ${error.response.data.details}`;

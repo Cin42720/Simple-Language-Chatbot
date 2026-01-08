@@ -8,25 +8,29 @@
     <meta name="description" content="Professional Foreign Language Learning Assistant" />
     <title>Professional Language Learning Assistant</title>
     <script>
-      (function() {
+      document.addEventListener('DOMContentLoaded', function() {
         try {
           const savedTheme = localStorage.getItem('darkMode');
           let isDarkMode = false;
           if (savedTheme !== null) {
             isDarkMode = JSON.parse(savedTheme) === true;
           }
-          if (isDarkMode) {
-            document.body.style.background = '#1a1a1a';
-            document.body.style.color = '#e0e0e0';
-          } else {
+          if (document.body) {
+            if (isDarkMode) {
+              document.body.style.background = '#1a1a1a';
+              document.body.style.color = '#e0e0e0';
+            } else {
+              document.body.style.background = '#f5f5f5';
+              document.body.style.color = '#333';
+            }
+          }
+        } catch (e) {
+          if (document.body) {
             document.body.style.background = '#f5f5f5';
             document.body.style.color = '#333';
           }
-        } catch (e) {
-          document.body.style.background = '#f5f5f5';
-          document.body.style.color = '#333';
         }
-      })();
+      });
     </script>
   </head>
   <body>
