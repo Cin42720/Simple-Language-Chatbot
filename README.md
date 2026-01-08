@@ -119,26 +119,6 @@ PORT=5000
 - "Relative pronoun ne zaman atlanabilir?"
 - "Defining ve non-defining clause farkı nedir?"
 
-## Proje Yapısı
-
-```
-.
-├── backend/
-│   ├── server.js              # Express sunucu ve API endpoint'leri
-│   ├── adjectiveClauses.js    # Adjective Clauses bilgi bankası
-│   ├── .env                   # Ortam değişkenleri (oluşturulmalı)
-│   └── package.json
-└── frontend/
-    ├── src/
-    │   ├── App.jsx            # Ana React bileşeni
-    │   ├── main.jsx           # React entry point
-    │   ├── App.css            # Stil dosyası
-    │   └── index.css          # Global stiller
-    ├── index.html             # HTML template
-    ├── vite.config.js         # Vite yapılandırması
-    └── package.json
-```
-
 ## Notlar
 
 - API anahtarları `.env` dosyasında saklanmaktadır. `.env` dosyasını `backend` klasöründe oluşturmanız gerekir.
