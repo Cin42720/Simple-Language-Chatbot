@@ -10,6 +10,7 @@ function App() {
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
+  const [backendConnected, setBackendConnected] = useState(null);
   const [darkMode, setDarkMode] = useState(() => {
     try {
       const savedTheme = localStorage.getItem('darkMode');
@@ -27,6 +28,24 @@ function App() {
     document.body.style.color = darkMode ? '#e0e0e0' : '#333';
     localStorage.setItem('darkMode', JSON.stringify(darkMode));
   }, [darkMode]);
+
+  useEffect(() => {
+    const checkBackendConnection = async () => {
+      try {
+        const response = await axios.get(`${API_URL}/`);
+        if (response.data.message) {
+          setBackendConnected(true);
+        }
+      } catch (error) {
+        setBackendConnected(false);
+        setMessages([{ 
+          text: '⚠️ Backend sunucusuna bağlanılamıyor! Lütfen backend sunucusunun çalıştığından emin olun (http://localhost:5000)', 
+          sender: 'bot' 
+        }]);
+      }
+    };
+    checkBackendConnection();
+  }, []);
 
   const formatMessage = (text) => {
     if (!text) return text;
@@ -91,9 +110,17 @@ function App() {
     <div className={`app ${darkMode ? 'dark' : 'light'}`}>
       <div className="header">
         <h1>Language Learning Assistant</h1>
-        <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
-          {darkMode ? '☀️' : '🌙'}
-        </button>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '15px' }}>
+          {backendConnected === false && (
+            <span style={{ color: '#ff6b6b', fontSize: '14px' }}>⚠️ Backend Bağlantısı Yok</span>
+          )}
+          {backendConnected === true && (
+            <span style={{ color: '#51cf66', fontSize: '14px' }}>✓ Backend Bağlı</span>
+          )}
+          <button className="theme-toggle" onClick={() => setDarkMode(!darkMode)}>
+            {darkMode ? '☀️' : '🌙'}
+          </button>
+        </div>
       </div>
       <div className="messages">
         {messages.map((msg, i) => (
