@@ -36,7 +36,16 @@ Chatbot aşağıdaki Adjective Clauses konularında uzmanlaşmıştır:
 - Node.js (v14 veya üzeri)
 - npm veya yarn
 
+### Projeyi İndirme
+
+```bash
+git clone https://github.com/Cin42720/Simple-Language-Chatbot.git
+cd Simple-Language-Chatbot
+```
+
 ### Backend Kurulumu
+
+**ÖNEMLİ:** Backend'i çalıştırmadan önce mutlaka bağımlılıkları kurun!
 
 ```bash
 cd backend
@@ -46,6 +55,8 @@ npm install
 Backend sunucusu hazır yapılandırılmıştır. API anahtarları kodda tanımlıdır, ek bir yapılandırma gerekmez.
 
 ### Frontend Kurulumu
+
+**ÖNEMLİ:** Frontend'i çalıştırmadan önce mutlaka bağımlılıkları kurun!
 
 ```bash
 cd frontend
@@ -91,10 +102,35 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 ## Kullanım
 
-1. Backend ve frontend sunucularını başlatın
-2. Tarayıcınızda `http://localhost:3000` adresine gidin
-3. Chatbot ile sohbet etmeye başlayın
-4. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
+### Adım Adım Başlatma
+
+1. **Backend'i başlatın** (ilk terminal penceresi):
+   ```bash
+   cd backend
+   npm start
+   ```
+   Backend `http://localhost:5000` adresinde çalışacaktır.
+
+2. **Frontend'i başlatın** (ikinci terminal penceresi):
+   ```bash
+   cd frontend
+   npm run dev
+   ```
+   Frontend `http://localhost:3000` adresinde çalışacaktır.
+
+3. Tarayıcınızda `http://localhost:3000` adresine gidin
+4. Chatbot ile sohbet etmeye başlayın
+5. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
+
+### Sorun Giderme
+
+**Hata: "Cannot find module 'express'" veya "vite: not found"**
+- Bu hata, bağımlılıkların kurulmadığını gösterir
+- Çözüm: İlgili klasörde (`backend` veya `frontend`) `npm install` komutunu çalıştırın
+
+**Hata: "Port 5000 already in use"**
+- Backend zaten çalışıyor olabilir
+- Çözüm: Çalışan Node.js process'lerini durdurun veya farklı bir port kullanın
 
 ### Örnek Sorular
 
