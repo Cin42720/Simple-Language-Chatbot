@@ -24,7 +24,7 @@ cd backend
 npm install
 ```
 
-Backend sunucusu `.env` dosyasını kullanır. Dosya zaten projeye dahil edilmiştir ve içinde gerekli API anahtarları bulunmaktadır.
+Backend sunucusu `.env` dosyasını kullanır. `backend` klasöründe `.env` dosyası oluşturup aşağıdaki ortam değişkenlerini eklemeniz gerekir.
 
 ### Frontend Kurulumu
 
@@ -57,7 +57,7 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 ## Ortam Değişkenleri
 
-Backend klasöründeki `.env` dosyası aşağıdaki değişkenleri içerir:
+Backend klasöründe `.env` dosyası oluşturun ve aşağıdaki değişkenleri ekleyin:
 
 ```env
 USE_GROQ=true
@@ -66,7 +66,7 @@ PORT=5000
 ```
 
 - `USE_GROQ`: Groq API kullanımını etkinleştirir (true/false)
-- `GROQ_API_KEY`: Groq API anahtarı
+- `GROQ_API_KEY`: Groq API anahtarı (yukarıdaki anahtar kullanılabilir)
 - `PORT`: Backend sunucu portu (varsayılan: 5000)
 
 ## Teknolojiler
@@ -91,7 +91,7 @@ PORT=5000
 
 ## Notlar
 
-- API anahtarları `.env` dosyasında saklanmaktadır ve projeye dahil edilmiştir
+- API anahtarları `.env` dosyasında saklanmaktadır. `.env` dosyasını `backend` klasöründe oluşturmanız gerekir.
 - Chatbot tüm cevapları Türkçe verir
 - Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
 
