@@ -1,14 +1,33 @@
 # AI Chatbot - Language Learning Assistant
 
-Mesleki yabancı dil öğrenmeye yardımcı olan bir AI chatbot uygulaması. Özellikle Adjective Clauses (Sıfat Cümlecikleri) konusunda detaylı bilgi ve örnekler sunar.
+Mesleki yabancı dil öğrenmeye yardımcı olan bir AI chatbot uygulaması. Özellikle **Adjective Clauses (Sıfat Cümlecikleri)** konusunda detaylı bilgi ve örnekler sunar.
+
+## Hakkında
+
+Bu proje, BTK Akademi B2 Seviye İngilizce kursundan alınan kapsamlı Adjective Clauses bilgisiyle eğitilmiş özel bir AI asistanıdır. Chatbot, Adjective Clauses konusunda uzmanlaşmış olup, kullanıcılara bu konuda detaylı açıklamalar, örnekler ve pratik ipuçları sunar.
 
 ## Özellikler
 
-- AI destekli dil öğrenme asistanı
-- Adjective Clauses konusunda özel uzmanlık
-- Karanlık/Aydınlık tema desteği
-- Gerçek zamanlı sohbet arayüzü
-- Tam Türkçe destek
+- **AI destekli dil öğrenme asistanı** - Groq API (Llama 3.3 70B) kullanarak güçlü AI desteği
+- **Adjective Clauses konusunda özel uzmanlık** - BTK Akademi B2 seviye İngilizce kursu içeriğiyle eğitilmiş
+- **Kapsamlı bilgi bankası** - which, that, who, whom, where gibi relative pronoun'ların detaylı açıklamaları
+- **Pratik örnekler** - Defining ve non-defining clauses, relative pronoun atlama kuralları
+- **Karanlık/Aydınlık tema desteği** - Kullanıcı tercihine göre tema değiştirme
+- **Gerçek zamanlı sohbet arayüzü** - Modern ve kullanıcı dostu React arayüzü
+- **Tam Türkçe destek** - Tüm cevaplar Türkçe olarak verilir
+
+## Adjective Clauses Özellikleri
+
+Chatbot aşağıdaki Adjective Clauses konularında uzmanlaşmıştır:
+
+- **Relative Pronoun Kullanımı**: which, that, who, whom, where
+- **İki Cümleyi Birleştirme**: Relative clause oluşturma teknikleri
+- **Defining vs Non-Defining Clauses**: Virgül kullanımı ve farklar
+- **Relative Pronoun Atlama Kuralları**: Ne zaman atlanabilir, ne zaman atlanamaz
+- **Kapsamlı Örnekler**: 10+ detaylı örnek cümle ve Türkçe çevirileri
+- **Pratik İpuçları**: Doğru kullanım için rehberlik
+
+**Kaynak**: BTK Akademi - B2 Seviye İngilizce Kursu (Eğitmen: Seçkin ESEN)
 
 ## Kurulum
 
@@ -50,6 +69,8 @@ Backend sunucusu varsayılan olarak `http://localhost:5000` adresinde çalışı
 
 ```bash
 cd frontend
+npm run dev
+# veya
 npm start
 ```
 
@@ -72,15 +93,16 @@ PORT=5000
 ## Teknolojiler
 
 ### Backend
-- Express.js
-- OpenAI SDK (Groq desteği ile)
-- CORS
-- dotenv
+- **Express.js** - Web sunucu framework'ü
+- **OpenAI SDK** - Groq API desteği ile AI entegrasyonu
+- **Groq API** - Llama 3.3 70B modeli
+- **CORS** - Cross-origin resource sharing
+- **dotenv** - Ortam değişkenleri yönetimi
 
 ### Frontend
-- React
-- Axios
-- React Scripts
+- **React** - Kullanıcı arayüzü kütüphanesi
+- **Vite** - Hızlı build tool ve development server
+- **Axios** - HTTP istekleri için kütüphane
 
 ## Kullanım
 
@@ -89,11 +111,45 @@ PORT=5000
 3. Chatbot ile sohbet etmeye başlayın
 4. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
 
+### Örnek Sorular
+
+- "Adjective clause nedir?"
+- "which ve that arasındaki fark nedir?"
+- "who ve whom nasıl kullanılır?"
+- "Relative pronoun ne zaman atlanabilir?"
+- "Defining ve non-defining clause farkı nedir?"
+
+## Proje Yapısı
+
+```
+.
+├── backend/
+│   ├── server.js              # Express sunucu ve API endpoint'leri
+│   ├── adjectiveClauses.js    # Adjective Clauses bilgi bankası
+│   ├── .env                   # Ortam değişkenleri (oluşturulmalı)
+│   └── package.json
+└── frontend/
+    ├── src/
+    │   ├── App.jsx            # Ana React bileşeni
+    │   ├── main.jsx           # React entry point
+    │   ├── App.css            # Stil dosyası
+    │   └── index.css          # Global stiller
+    ├── index.html             # HTML template
+    ├── vite.config.js         # Vite yapılandırması
+    └── package.json
+```
+
 ## Notlar
 
 - API anahtarları `.env` dosyasında saklanmaktadır. `.env` dosyasını `backend` klasöründe oluşturmanız gerekir.
 - Chatbot tüm cevapları Türkçe verir
 - Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
+- Sistem, Adjective Clauses ile ilgili soruları otomatik olarak tespit eder ve özel bir prompt ile yanıtlar
+- Türkçe karakter hatalarını otomatik olarak düzeltir
+
+## Geliştirici
+
+**Hüseyin Emre Ustaer**
 
 ## Lisans
 
