@@ -43,7 +43,7 @@ cd backend
 npm install
 ```
 
-Backend sunucusu `.env` dosyasını kullanır. `backend` klasöründe `.env` dosyası oluşturup aşağıdaki ortam değişkenlerini eklemeniz gerekir.
+Backend sunucusu hazır yapılandırılmıştır. API anahtarları kodda tanımlıdır, ek bir yapılandırma gerekmez.
 
 ### Frontend Kurulumu
 
@@ -76,20 +76,6 @@ npm start
 
 Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalışır.
 
-## Ortam Değişkenleri
-
-Backend klasöründe `.env` dosyası oluşturun ve aşağıdaki değişkenleri ekleyin:
-
-```env
-USE_GROQ=true
-GROQ_API_KEY=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
-PORT=5000
-```
-
-- `USE_GROQ`: Groq API kullanımını etkinleştirir (true/false)
-- `GROQ_API_KEY`: Groq API anahtarı (yukarıdaki anahtar kullanılabilir)
-- `PORT`: Backend sunucu portu (varsayılan: 5000)
-
 ## Teknolojiler
 
 ### Backend
@@ -97,7 +83,6 @@ PORT=5000
 - **OpenAI SDK** - Groq API desteği ile AI entegrasyonu
 - **Groq API** - Llama 3.3 70B modeli
 - **CORS** - Cross-origin resource sharing
-- **dotenv** - Ortam değişkenleri yönetimi
 
 ### Frontend
 - **React** - Kullanıcı arayüzü kütüphanesi
@@ -121,7 +106,7 @@ PORT=5000
 
 ## Notlar
 
-- API anahtarları `.env` dosyasında saklanmaktadır. `.env` dosyasını `backend` klasöründe oluşturmanız gerekir.
+- API anahtarları `backend/server.js` dosyasında direkt olarak tanımlıdır
 - Chatbot tüm cevapları Türkçe verir
 - Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
 - Sistem, Adjective Clauses ile ilgili soruları otomatik olarak tespit eder ve özel bir prompt ile yanıtlar

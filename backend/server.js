@@ -3,15 +3,16 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const OpenAI = require('openai');
 const { getAdjectiveClausesKnowledgeText } = require('./adjectiveClauses');
-require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+
+// API Yapılandırması - Direkt kodda tanımlı
+const GROQ_API_KEY = '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';
+const USE_GROQ = true;
+const PORT = 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
-
-const USE_GROQ = process.env.USE_GROQ === 'true' || (!process.env.OPENAI_API_KEY && process.env.GROQ_API_KEY);
 
 const fixCommonTypos = (text) => {
   if (!text) return text;
@@ -42,12 +43,12 @@ const fixCommonTypos = (text) => {
 let aiClient;
 if (USE_GROQ) {
   aiClient = new OpenAI({
-    apiKey: process.env.GROQ_API_KEY,
+    apiKey: GROQ_API_KEY,
     baseURL: 'https://api.groq.com/openai/v1',
   });
 } else {
   aiClient = new OpenAI({
-    apiKey: process.env.OPENAI_API_KEY,
+    apiKey: process.env.OPENAI_API_KEY || '',
   });
 }
 
