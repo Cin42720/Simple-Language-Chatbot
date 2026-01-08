@@ -1,4 +1,4 @@
-﻿# AI Chatbot - Language Learning Assistant
+# AI Chatbot - Language Learning Assistant
 
 Mesleki yabancÄ± dil Ã¶ÄŸrenmeye yardÄ±mcÄ± olan bir AI chatbot uygulamasÄ±. Ã–zellikle **Adjective Clauses (SÄ±fat CÃ¼mlecikleri)** konusunda detaylÄ± bilgi ve Ã¶rnekler sunar.
 
@@ -63,7 +63,7 @@ npm start
 npm run dev
 ```
 
-Backend sunucusu varsayÄ±lan olarak http://localhost:5000 adresinde Ã§alÄ±ÅŸÄ±r.
+Backend sunucusu varsayÄ±lan olarak `http://localhost:5000` adresinde Ã§alÄ±ÅŸÄ±r.
 
 ### Frontend UygulamasÄ±
 
@@ -74,7 +74,7 @@ npm run dev
 npm start
 ```
 
-Frontend uygulamasÄ± varsayÄ±lan olarak http://localhost:3000 adresinde Ã§alÄ±ÅŸÄ±r.
+Frontend uygulamasÄ± varsayÄ±lan olarak `http://localhost:3000` adresinde Ã§alÄ±ÅŸÄ±r.
 
 ## Teknolojiler
 
@@ -92,7 +92,7 @@ Frontend uygulamasÄ± varsayÄ±lan olarak http://localhost:3000 adresinde Ã§
 ## KullanÄ±m
 
 1. Backend ve frontend sunucularÄ±nÄ± baÅŸlatÄ±n
-2. TarayÄ±cÄ±nÄ±zda http://localhost:3000 adresine gidin
+2. TarayÄ±cÄ±nÄ±zda `http://localhost:3000` adresine gidin
 3. Chatbot ile sohbet etmeye baÅŸlayÄ±n
 4. Adjective Clauses veya diÄŸer dil Ã¶ÄŸrenme konularÄ±nda sorular sorun
 
@@ -106,7 +106,7 @@ Frontend uygulamasÄ± varsayÄ±lan olarak http://localhost:3000 adresinde Ã§
 
 ## Notlar
 
-- API anahtarlarÄ± ackend/server.js dosyasÄ±nda direkt olarak tanÄ±mlÄ±dÄ±r
+- API anahtarlarÄ± `backend/server.js` dosyasÄ±nda direkt olarak tanÄ±mlÄ±dÄ±r
 - Chatbot tÃ¼m cevaplarÄ± TÃ¼rkÃ§e verir
 - Adjective Clauses konusunda Ã¶zel uzmanlÄ±k ve detaylÄ± aÃ§Ä±klamalar sunar
 - Sistem, Adjective Clauses ile ilgili sorularÄ± otomatik olarak tespit eder ve Ã¶zel bir prompt ile yanÄ±tlar
