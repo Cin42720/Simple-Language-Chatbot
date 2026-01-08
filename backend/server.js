@@ -6,7 +6,6 @@ const { getAdjectiveClausesKnowledgeText } = require('./adjectiveClauses');
 
 const app = express();
 
-// API Yapılandırması - Direkt kodda tanımlı
 const GROQ_API_KEY = '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';
 const USE_GROQ = true;
 const PORT = 5000;
