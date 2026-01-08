@@ -54,27 +54,33 @@ npm install
 
 ## Çalıştırma
 
+**ÖNEMLİ:** Backend ve frontend'i çalıştırmak için **iki ayrı terminal penceresi** açmanız gerekmektedir.
+
 ### Backend Sunucusu
+
+**1. Terminal Penceresi (Backend için):**
 
 ```bash
 cd backend
 npm start
-# veya geliştirme modu için:
-npm run dev
 ```
 
 Backend sunucusu varsayılan olarak `http://localhost:5000` adresinde çalışır.
 
+**Not:** Backend sunucusu terminal penceresi açık kaldığı sürece çalışır. Terminal penceresini kapatırsanız backend durur. Bu normal bir davranıştır.
+
 ### Frontend Uygulaması
+
+**2. Terminal Penceresi (Frontend için):**
 
 ```bash
 cd frontend
 npm run dev
-# veya
-npm start
 ```
 
 Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalışır.
+
+**Not:** Frontend de terminal penceresi açık kaldığı sürece çalışır.
 
 ## Teknolojiler
 
@@ -91,10 +97,13 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 ## Kullanım
 
-1. Backend ve frontend sunucularını başlatın
-2. Tarayıcınızda `http://localhost:3000` adresine gidin
-3. Chatbot ile sohbet etmeye başlayın
-4. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
+1. **İlk terminal penceresinde** backend sunucusunu başlatın (`cd backend` → `npm start`)
+2. **İkinci terminal penceresinde** frontend uygulamasını başlatın (`cd frontend` → `npm run dev`)
+3. Tarayıcınızda `http://localhost:3000` adresine gidin
+4. Chatbot ile sohbet etmeye başlayın
+5. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
+
+**Not:** Her iki terminal penceresi de açık kalmalıdır. Terminal pencerelerini kapatırsanız ilgili servisler durur.
 
 ### Örnek Sorular
 
