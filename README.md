@@ -116,6 +116,3 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 **Hüseyin Emre Ustaer**
 
-## Lisans
-
-ISC
