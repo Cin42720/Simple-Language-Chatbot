@@ -1,39 +1,39 @@
 # AI Chatbot - Language Learning Assistant
 
-Mesleki yabancÄ± dil Ã¶ÄŸrenmeye yardÄ±mcÄ± olan bir AI chatbot uygulamasÄ±. Ã–zellikle **Adjective Clauses (SÄ±fat CÃ¼mlecikleri)** konusunda detaylÄ± bilgi ve Ã¶rnekler sunar.
+Mesleki yabancı dil öğrenmeye yardımcı olan bir AI chatbot uygulaması. Özellikle **Adjective Clauses (Sıfat Cümlecikleri)** konusunda detaylı bilgi ve örnekler sunar.
 
-## HakkÄ±nda
+## Hakkında
 
-Bu proje, BTK Akademi B2 Seviye Ä°ngilizce kursundan alÄ±nan kapsamlÄ± Adjective Clauses bilgisiyle eÄŸitilmiÅŸ Ã¶zel bir AI asistanÄ±dÄ±r. Chatbot, Adjective Clauses konusunda uzmanlaÅŸmÄ±ÅŸ olup, kullanÄ±cÄ±lara bu konuda detaylÄ± aÃ§Ä±klamalar, Ã¶rnekler ve pratik ipuÃ§larÄ± sunar.
+Bu proje, BTK Akademi B2 Seviye İngilizce kursundan alınan kapsamlı Adjective Clauses bilgisiyle eğitilmiş özel bir AI asistanıdır. Chatbot, Adjective Clauses konusunda uzmanlaşmış olup, kullanıcılara bu konuda detaylı açıklamalar, örnekler ve pratik ipuçları sunar.
 
-## Ã–zellikler
+## Özellikler
 
-- **AI destekli dil Ã¶ÄŸrenme asistanÄ±** - Groq API (Llama 3.3 70B) kullanarak gÃ¼Ã§lÃ¼ AI desteÄŸi
-- **Adjective Clauses konusunda Ã¶zel uzmanlÄ±k** - BTK Akademi B2 seviye Ä°ngilizce kursu iÃ§eriÄŸiyle eÄŸitilmiÅŸ
-- **KapsamlÄ± bilgi bankasÄ±** - which, that, who, whom, where gibi relative pronoun'larÄ±n detaylÄ± aÃ§Ä±klamalarÄ±
-- **Pratik Ã¶rnekler** - Defining ve non-defining clauses, relative pronoun atlama kurallarÄ±
-- **KaranlÄ±k/AydÄ±nlÄ±k tema desteÄŸi** - KullanÄ±cÄ± tercihine gÃ¶re tema deÄŸiÅŸtirme
-- **GerÃ§ek zamanlÄ± sohbet arayÃ¼zÃ¼** - Modern ve kullanÄ±cÄ± dostu React arayÃ¼zÃ¼
-- **Tam TÃ¼rkÃ§e destek** - TÃ¼m cevaplar TÃ¼rkÃ§e olarak verilir
+- **AI destekli dil öğrenme asistanı** - Groq API (Llama 3.3 70B) kullanarak güçlü AI desteği
+- **Adjective Clauses konusunda özel uzmanlık** - BTK Akademi B2 seviye İngilizce kursu içeriğiyle eğitilmiş
+- **Kapsamlı bilgi bankası** - which, that, who, whom, where gibi relative pronoun'ların detaylı açıklamaları
+- **Pratik örnekler** - Defining ve non-defining clauses, relative pronoun atlama kuralları
+- **Karanlık/Aydınlık tema desteği** - Kullanıcı tercihine göre tema değiştirme
+- **Gerçek zamanlı sohbet arayüzü** - Modern ve kullanıcı dostu React arayüzü
+- **Tam Türkçe destek** - Tüm cevaplar Türkçe olarak verilir
 
-## Adjective Clauses Ã–zellikleri
+## Adjective Clauses Özellikleri
 
-Chatbot aÅŸaÄŸÄ±daki Adjective Clauses konularÄ±nda uzmanlaÅŸmÄ±ÅŸtÄ±r:
+Chatbot aşağıdaki Adjective Clauses konularında uzmanlaşmıştır:
 
-- **Relative Pronoun KullanÄ±mÄ±**: which, that, who, whom, where
-- **Ä°ki CÃ¼mleyi BirleÅŸtirme**: Relative clause oluÅŸturma teknikleri
-- **Defining vs Non-Defining Clauses**: VirgÃ¼l kullanÄ±mÄ± ve farklar
-- **Relative Pronoun Atlama KurallarÄ±**: Ne zaman atlanabilir, ne zaman atlanamaz
-- **KapsamlÄ± Ã–rnekler**: 10+ detaylÄ± Ã¶rnek cÃ¼mle ve TÃ¼rkÃ§e Ã§evirileri
-- **Pratik Ä°puÃ§larÄ±**: DoÄŸru kullanÄ±m iÃ§in rehberlik
+- **Relative Pronoun Kullanımı**: which, that, who, whom, where
+- **İki Cümleyi Birleştirme**: Relative clause oluşturma teknikleri
+- **Defining vs Non-Defining Clauses**: Virgül kullanımı ve farklar
+- **Relative Pronoun Atlama Kuralları**: Ne zaman atlanabilir, ne zaman atlanamaz
+- **Kapsamlı Örnekler**: 10+ detaylı örnek cümle ve Türkçe çevirileri
+- **Pratik İpuçları**: Doğru kullanım için rehberlik
 
-**Kaynak**: BTK Akademi - B2 Seviye Ä°ngilizce Kursu (EÄŸitmen: SeÃ§kin ESEN)
+**Kaynak**: BTK Akademi - B2 Seviye İngilizce Kursu (Eğitmen: Seçkin ESEN)
 
 ## Kurulum
 
 ### Gereksinimler
 
-- Node.js (v14 veya Ã¼zeri)
+- Node.js (v14 veya üzeri)
 - npm veya yarn
 
 ### Backend Kurulumu
@@ -43,7 +43,7 @@ cd backend
 npm install
 ```
 
-Backend sunucusu hazÄ±r yapÄ±landÄ±rÄ±lmÄ±ÅŸtÄ±r. API anahtarlarÄ± kodda tanÄ±mlÄ±dÄ±r, ek bir yapÄ±landÄ±rma gerekmez.
+Backend sunucusu hazır yapılandırılmıştır. API anahtarları kodda tanımlıdır, ek bir yapılandırma gerekmez.
 
 ### Frontend Kurulumu
 
@@ -52,20 +52,20 @@ cd frontend
 npm install
 ```
 
-## Ã‡alÄ±ÅŸtÄ±rma
+## Çalıştırma
 
 ### Backend Sunucusu
 
 ```bash
 cd backend
 npm start
-# veya geliÅŸtirme modu iÃ§in:
+# veya geliştirme modu için:
 npm run dev
 ```
 
-Backend sunucusu varsayÄ±lan olarak `http://localhost:5000` adresinde Ã§alÄ±ÅŸÄ±r.
+Backend sunucusu varsayılan olarak `http://localhost:5000` adresinde çalışır.
 
-### Frontend UygulamasÄ±
+### Frontend Uygulaması
 
 ```bash
 cd frontend
@@ -74,44 +74,44 @@ npm run dev
 npm start
 ```
 
-Frontend uygulamasÄ± varsayÄ±lan olarak `http://localhost:3000` adresinde Ã§alÄ±ÅŸÄ±r.
+Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalışır.
 
 ## Teknolojiler
 
 ### Backend
-- **Express.js** - Web sunucu framework'Ã¼
-- **OpenAI SDK** - Groq API desteÄŸi ile AI entegrasyonu
+- **Express.js** - Web sunucu framework'ü
+- **OpenAI SDK** - Groq API desteği ile AI entegrasyonu
 - **Groq API** - Llama 3.3 70B modeli
 - **CORS** - Cross-origin resource sharing
 
 ### Frontend
-- **React** - KullanÄ±cÄ± arayÃ¼zÃ¼ kÃ¼tÃ¼phanesi
-- **Vite** - HÄ±zlÄ± build tool ve development server
-- **Axios** - HTTP istekleri iÃ§in kÃ¼tÃ¼phane
+- **React** - Kullanıcı arayüzü kütüphanesi
+- **Vite** - Hızlı build tool ve development server
+- **Axios** - HTTP istekleri için kütüphane
 
-## KullanÄ±m
+## Kullanım
 
-1. Backend ve frontend sunucularÄ±nÄ± baÅŸlatÄ±n
-2. TarayÄ±cÄ±nÄ±zda `http://localhost:3000` adresine gidin
-3. Chatbot ile sohbet etmeye baÅŸlayÄ±n
-4. Adjective Clauses veya diÄŸer dil Ã¶ÄŸrenme konularÄ±nda sorular sorun
+1. Backend ve frontend sunucularını başlatın
+2. Tarayıcınızda `http://localhost:3000` adresine gidin
+3. Chatbot ile sohbet etmeye başlayın
+4. Adjective Clauses veya diğer dil öğrenme konularında sorular sorun
 
-### Ã–rnek Sorular
+### Örnek Sorular
 
 - "Adjective clause nedir?"
-- "which ve that arasÄ±ndaki fark nedir?"
-- "who ve whom nasÄ±l kullanÄ±lÄ±r?"
+- "which ve that arasındaki fark nedir?"
+- "who ve whom nasıl kullanılır?"
 - "Relative pronoun ne zaman atlanabilir?"
-- "Defining ve non-defining clause farkÄ± nedir?"
+- "Defining ve non-defining clause farkı nedir?"
 
 ## Notlar
 
-- API anahtarlarÄ± `backend/server.js` dosyasÄ±nda direkt olarak tanÄ±mlÄ±dÄ±r
-- Chatbot tÃ¼m cevaplarÄ± TÃ¼rkÃ§e verir
-- Adjective Clauses konusunda Ã¶zel uzmanlÄ±k ve detaylÄ± aÃ§Ä±klamalar sunar
-- Sistem, Adjective Clauses ile ilgili sorularÄ± otomatik olarak tespit eder ve Ã¶zel bir prompt ile yanÄ±tlar
-- TÃ¼rkÃ§e karakter hatalarÄ±nÄ± otomatik olarak dÃ¼zeltir
+- API anahtarları `backend/server.js` dosyasında direkt olarak tanımlıdır
+- Chatbot tüm cevapları Türkçe verir
+- Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
+- Sistem, Adjective Clauses ile ilgili soruları otomatik olarak tespit eder ve özel bir prompt ile yanıtlar
+- Türkçe karakter hatalarını otomatik olarak düzeltir
 
-## GeliÅŸtirici
+## Geliştirici
 
-**HÃ¼seyin Emre Ustaer**
+**Hüseyin Emre Ustaer**
