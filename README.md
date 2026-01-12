@@ -43,7 +43,14 @@ cd backend
 npm install
 ```
 
-Backend sunucusu hazır yapılandırılmıştır. **API anahtarı `backend/server.js` dosyasında direkt olarak tanımlıdır, kullanıcıların API key oluşturmasına veya `.env` dosyası oluşturmasına gerek yoktur.** Projeyi clone edip direkt kullanabilirsiniz.
+Backend sunucusu kurulumundan sonra `.env` dosyası oluşturmanız gerekmektedir:
+
+```bash
+cd backend
+cp .env.example .env
+```
+
+Ardından `.env` dosyasını açıp `GROQ_API_KEY` değerini kendi Groq API anahtarınızla değiştirin. Groq API anahtarı almak için [Groq Console](https://console.groq.com/) adresini ziyaret edebilirsiniz.
 
 ### Frontend Kurulumu
 
@@ -106,7 +113,7 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 ## Notlar
 
-- **API Key**: Groq API anahtarı `backend/server.js` dosyasında direkt olarak tanımlıdır. Kullanıcıların API key oluşturmasına, `.env` dosyası oluşturmasına veya herhangi bir yapılandırma yapmasına gerek yoktur. Projeyi clone edip `npm install` ve `npm start` komutları ile direkt kullanabilirsiniz.
+- **API Key**: Groq API anahtarı `.env` dosyasında saklanmaktadır. Güvenlik nedeniyle API key kodda değil, `.env` dosyasında tutulmaktadır. Kullanıcıların kendi Groq API anahtarlarını oluşturup `.env` dosyasına eklemesi gerekmektedir. `.env.example` dosyasını referans alabilirsiniz.
 - Chatbot tüm cevapları Türkçe verir
 - Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
 - Sistem, Adjective Clauses ile ilgili soruları otomatik olarak tespit eder ve özel bir prompt ile yanıtlar
