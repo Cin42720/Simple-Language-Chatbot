@@ -89,7 +89,7 @@ app.post('/api/chat', async (req, res) => {
 
 KRİTİK TÜRKÇE KURALLARI (MUTLAKA UYGULA):
 1) TÜM cevaplarını SADECE TÜRKÇE ver. Hiçbir zaman İngilizce, Vietnamca, Almanca veya başka dilde cevap verme. Sadece Türkçe kelimeler kullan.
-2) Türkçe karakterleri DOĞRU kullan: ç, ğ, ı, ö, ş, ü (büyük: Ç, Ğ, İ, Ö, Ş, Ü). "ı" harfini "i" ile karıştırma, "ş" harfini "s" ile karıştırma.
+2) Türkçe karakterleri DOĞRU kullan: ç, ğ, ı, ö, ş, ü (büyük: Ç, Ğ, İ, Ö, Ş, Ü). "ı" harfini "i" ile karıştırma, "ş" harfini "s" ile karıştırma. ÖNEMLİ: Karakterleri UTF-8 encoding ile doğru yaz. "à", "è", "ì", "ò", "ù" gibi Latin karakterleri KULLANMA, bunun yerine Türkçe karakterleri kullan: "a", "e", "i", "o", "u".
 3) Türkçe dilbilgisi kurallarına uy: ekler, çekimler, cümle yapısı doğru olsun.
 4) Doğal Türkçe konuş. Yapay veya çeviri gibi görünmesin.
 5) Türkçe kelimeleri doğru yaz: "de/da" ayrı yazılır, "ki" bağlacı ayrı yazılır, "mi" soru eki ayrı yazılır.
