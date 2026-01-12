@@ -43,7 +43,7 @@ cd backend
 npm install
 ```
 
-Backend sunucusu hazır yapılandırılmıştır. API anahtarları kodda tanımlıdır, ek bir yapılandırma gerekmez.
+Backend sunucusu hazır yapılandırılmıştır. **API anahtarı `backend/server.js` dosyasında direkt olarak tanımlıdır, kullanıcıların API key oluşturmasına veya `.env` dosyası oluşturmasına gerek yoktur.** Projeyi clone edip direkt kullanabilirsiniz.
 
 ### Frontend Kurulumu
 
@@ -106,7 +106,7 @@ Frontend uygulaması varsayılan olarak `http://localhost:3000` adresinde çalı
 
 ## Notlar
 
-- API anahtarları `backend/server.js` dosyasında direkt olarak tanımlıdır
+- **API Key**: Groq API anahtarı `backend/server.js` dosyasında direkt olarak tanımlıdır. Kullanıcıların API key oluşturmasına, `.env` dosyası oluşturmasına veya herhangi bir yapılandırma yapmasına gerek yoktur. Projeyi clone edip `npm install` ve `npm start` komutları ile direkt kullanabilirsiniz.
 - Chatbot tüm cevapları Türkçe verir
 - Adjective Clauses konusunda özel uzmanlık ve detaylı açıklamalar sunar
 - Sistem, Adjective Clauses ile ilgili soruları otomatik olarak tespit eder ve özel bir prompt ile yanıtlar
